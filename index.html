@@ -2,29 +2,40 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - NathH</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Nathan H</title>
 </head>
 <body>
     <header>
-        <h1>Mon digital resume</h1>
+        <h1>Portfolio de Nathan H</h1>
         <nav>
-            <ul>
-                <li><a href="#identite">Identité</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#formations">Formations</a></li>
-                <li><a href="#centreInterets">Centres d'intérêt</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <input type="checkbox" id="input-burger">
+            <label for="input-burger" class="icon-burger">&#x2630;</label>
+
+            <ul class="menu-burger">
+                <li><button onclick="location.assign('#identite')">Identité</button></li>
+                <li><button onclick="location.assign('#competences')">Compétences</button></li>
+                <li><button onclick="location.assign('#projets')">Projets</button></li>
+                <li><button onclick="location.assign('#experiences')">Expériences</button></li>
+                <li><button onclick="location.assign('#formations')">Formations</button></li>
+                <li><button onclick="location.assign('#centreInterets')">Centres d'intérêt</button></li>
+                <li><button onclick="location.assign('#contact')">Contact</button></li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <section id="identite" class="identite">
-            <h2>NathH</h2>
+        <section id="identite" class="hero">
+            <div class="avatar">NH</div>
+            <h2>Nathan H</h2>
             <p>Étudiant en informatique</p>
             <p>Actuellement étudiant à Epitech en Pré-MSC (année de préparation Master of Science), je suis passionné par le développement informatique, les systèmes Linux et l'open source.</p>
+
+            <div class="cta">
+                <a class="bouton" href="#projets">Voir mes projets</a>
+                <a class="bouton bouton-secondaire" href="#contact">Me contacter</a>
+            </div>
         </section>
 
         <div class="cardbox">
@@ -44,12 +55,28 @@
                 </article>
             </section>
 
+            <section id="projets" class="projets">
+                <h2>Projets</h2>
+
+                <article class="card">
+                    <h3>NH_navigator</h3>
+                    <p>Description : Il s'agit d'un navigateur que j'ai créé en utilisant le framework ElectronJS.</p>
+                    <span class="tech">Langages : HTML, CSS, JS, TS</span>
+                </article>
+
+                <article class="card">
+                    <h3>CarburantVerif</h3>
+                    <p>Description : Il s'agit d'un petit programme en ligne de commande construit en Rust qui a pour but de trier et de récupérer le prix des carburants le plus bas ou haut en fonction de leurs types, de la ville, etc.</p>
+                    <span class="tech">Langage : RUST</span>
+                </article>
+            </section>
+
             <section id="experiences" class="experiences">
                 <h2>Expériences Professionnelles</h2>
 
                 <article class="card">
                     <h3>Stage en cybersécurité</h3>
-                    <p><strong>Saint-Gobain</strong> — <em>[Période : Mai 2025 - Juillet 2025]</em></p>
+                    <p><strong>Saint-Gobain</strong> — <em>Période : Mai 2025 - Juillet 2025</em></p>
                     <p>Relecture de codes pour validation.</p>
                     <p>Sensibilisation aux risques en matière de sécurité informatique.</p>
                     <p>Mise en place d'une solution d'aide pour la validation de la sécurité des projets.</p>
@@ -95,7 +122,7 @@
 
         <section id="contact" class="form">
             <h2>Me Contacter</h2>
-            <form action="mailto:jevog84048@kingdais.com" method="post" enctype="text/plain">
+            <form action="mailto:nathh.others.box01@gmail.com" method="post" enctype="text/plain">
                 <label for="email">Votre adresse email :</label><br>
                 <input type="email" name="email" id="email" placeholder="nom@exemple.com" required><br>
 
@@ -105,12 +132,13 @@
                 <label for="question">Votre message / question* :</label><br>
                 <textarea name="question" id="question" required placeholder="Écrivez votre message ici..."></textarea><br>
 
-                <input type="submit" value="Envoyer un mail">
+                <input type="submit" value="Envoyer un mail" class="bouton-envoi">
             </form>
         </section>
     </main>
+
     <footer>
-        <p>NathH — 2026</p>
+        <p>Nathan H — 2026</p>
         <a href="https://github.com/NathH06">Mon Github</a><br>
         <a href="lato_copyrights.txt">Copyright de la font utilisée</a>
     </footer>
