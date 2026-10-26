@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Nathan H</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio de Nathan H</h1>
+        <nav>
+            <input type="checkbox" id="input-burger">
+            <label for="input-burger" class="icon-burger">&#x2630;</label>
+            <ul class="menu-burger">
+                <li><button onclick="location.assign('index.html#identite')">Identité</button></li>
+                <li><button onclick="location.assign('index.html#competences')">Compétences</button></li>
+                <li><button onclick="location.assign('projets-experiences.html#projets')">Projets</button></li>
+                <li><button onclick="location.assign('projets-experiences.html#experiences')">Expériences</button></li>
+                <li><button onclick="location.assign('formations-interets.html#formations')">Formations</button></li>
+                <li><button onclick="location.assign('formations-interets.html#centreInterets')">Centres d'intérêt</button></li>
+                <li><button onclick="location.assign('contact.html#contact')">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact" class="form">
+            <h2>Me Contacter</h2>
+            <form action="mailto:nathh.others.box01@gmail.com" method="post" enctype="text/plain">
+                <label for="email">Votre adresse email :</label><br>
+                <input type="email" name="email" id="email" placeholder="nom@exemple.com" required><br>
+                <label for="tel">Votre numéro de téléphone :</label><br>
+                <input type="tel" name="tel" id="tel" placeholder="06/+33 6 XX XX XX XX"><br>
+                <label for="question">Votre message / question* :</label><br>
+                <textarea name="question" id="question" required placeholder="Écrivez votre message ici..."></textarea><br>
+                <input type="submit" value="Envoyer un mail" class="bouton-envoi">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Nathan H — 2026</p>
+        <a href="https://github.com/NathH06">Mon Github</a><br>
+        <a href="lato_copyrights.txt">Copyright de la font utilisée</a>
+    </footer>
+</body>
+</html>

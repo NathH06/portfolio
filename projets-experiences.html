@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Nathan H</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio de Nathan H</h1>
+        <nav>
+            <input type="checkbox" id="input-burger">
+            <label for="input-burger" class="icon-burger">&#x2630;</label>
+            <ul class="menu-burger">
+                <li><button onclick="location.assign('index.html#identite')">Identité</button></li>
+                <li><button onclick="location.assign('index.html#competences')">Compétences</button></li>
+                <li><button onclick="location.assign('projets-experiences.html#projets')">Projets</button></li>
+                <li><button onclick="location.assign('projets-experiences.html#experiences')">Expériences</button></li>
+                <li><button onclick="location.assign('formations-interets.html#formations')">Formations</button></li>
+                <li><button onclick="location.assign('formations-interets.html#centreInterets')">Centres d'intérêt</button></li>
+                <li><button onclick="location.assign('contact.html#contact')">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cardbox">
+            <section id="projets" class="projets">
+                <h2>Projets</h2>
+                <article class="card">
+                    <h3>NH_navigator</h3>
+                    <p>Description : Il s'agit d'un navigateur que j'ai créé en utilisant le framework ElectronJS.</p>
+                    <span class="tech">Langages : HTML, CSS, JS, TS</span>
+                </article>
+                <article class="card">
+                    <h3>CarburantVerif</h3>
+                    <p>Description : Il s'agit d'un petit programme en ligne de commande construit en Rust qui a pour but de trier et de récupérer le prix des carburants le plus bas ou haut en fonction de leurs types, de la ville, etc.</p>
+                    <span class="tech">Langage : RUST</span>
+                </article>
+            </section>
+            <section id="experiences" class="experiences">
+                <h2>Expériences Professionnelles</h2>
+                <article class="card">
+                    <h3>Stage en cybersécurité</h3>
+                    <p><strong>Saint-Gobain</strong> — <em>Période : Mai 2025 - Juillet 2025</em></p>
+                    <p>Relecture de codes pour validation.</p>
+                    <p>Sensibilisation aux risques en matière de sécurité informatique.</p>
+                    <p>Mise en place d'une solution d'aide pour la validation de la sécurité des projets.</p>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Nathan H — 2026</p>
+        <a href="https://github.com/NathH06">Mon Github</a><br>
+        <a href="lato_copyrights.txt">Copyright de la font utilisée</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio - Nathan H</title>
+</head>
+<body>
+    <header>
+        <h1>Portfolio de Nathan H</h1>
+        <nav>
+            <input type="checkbox" id="input-burger">
+            <label for="input-burger" class="icon-burger">&#x2630;</label>
+
+            <ul class="menu-burger">
+                <li><button onclick="location.assign('#identite')">Identité</button></li>
+                <li><button onclick="location.assign('#competences')">Compétences</button></li>
+                <li><button onclick="location.assign('#projets')">Projets</button></li>
+                <li><button onclick="location.assign('#experiences')">Expériences</button></li>
+                <li><button onclick="location.assign('#formations')">Formations</button></li>
+                <li><button onclick="location.assign('#centreInterets')">Centres d'intérêt</button></li>
+                <li><button onclick="location.assign('#contact')">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="identite" class="hero">
+            <div class="avatar">NH</div>
+            <h2>Nathan H</h2>
+            <p>Étudiant en informatique</p>
+            <p>Actuellement étudiant à Epitech en Pré-MSC (année de préparation Master of Science), je suis passionné par le développement informatique, les systèmes Linux et l'open source.</p>
+
+            <div class="cta">
+                <a class="bouton" href="#projets">Voir mes projets</a>
+                <a class="bouton bouton-secondaire" href="#contact">Me contacter</a>
+            </div>
+        </section>
+
+        <div class="cardbox">
+            <section id="competences" class="competences">
+                <h2>Compétences</h2>
+                
+                <article class="card">
+                    <h3>Compétences Techniques (Hard Skills)</h3>
+                    <p>Développement (logiciel et web)</p>
+                    <span class="tech">Python • HTML • CSS • JavaScript • SQL • C / C++</span>
+                </article>
+
+                <article class="card">
+                    <h3>Compétences Humaines (Soft Skills)</h3>
+                    <p>Je suis une personne curieuse et persévérante, qui aime apprendre même en autodidacte.</p>
+                    <span class="tech">Curiosité • Autonomie • Persévérance</span>
+                </article>
+            </section>
+
+            <section id="projets" class="projets">
+                <h2>Projets</h2>
+
+                <article class="card">
+                    <h3>NH_navigator</h3>
+                    <p>Description : Il s'agit d'un navigateur que j'ai créé en utilisant le framework ElectronJS.</p>
+                    <span class="tech">Langages : HTML, CSS, JS, TS</span>
+                </article>
+
+                <article class="card">
+                    <h3>CarburantVerif</h3>
+                    <p>Description : Il s'agit d'un petit programme en ligne de commande construit en Rust qui a pour but de trier et de récupérer le prix des carburants le plus bas ou haut en fonction de leurs types, de la ville, etc.</p>
+                    <span class="tech">Langage : RUST</span>
+                </article>
+            </section>
+
+            <section id="experiences" class="experiences">
+                <h2>Expériences Professionnelles</h2>
+
+                <article class="card">
+                    <h3>Stage en cybersécurité</h3>
+                    <p><strong>Saint-Gobain</strong> — <em>Période : Mai 2025 - Juillet 2025</em></p>
+                    <p>Relecture de codes pour validation.</p>
+                    <p>Sensibilisation aux risques en matière de sécurité informatique.</p>
+                    <p>Mise en place d'une solution d'aide pour la validation de la sécurité des projets.</p>
+                </article>
+            </section>
+
+            <section id="formations" class="formations">
+                <h2>Formations</h2>
+
+                <article class="card">
+                    <h3>Pré-MSC (préparation pour une formation Master of Science) — EPITECH</h3>
+                    <p><strong>2026 - 2027</strong></p>
+                    <p>Formation basée sur la pédagogie par projets : apprentissage intensif de la programmation.</p>
+                    <span class="tech">Projets en groupe • MSC • Pré-MSC</span>
+                </article>
+
+                <article class="card">
+                    <h3>Brevet de Technicien Supérieur CIEL (Cybersécurité Informatique et réseaux électroniques)</h3>
+                    <p><strong>2025 - 2026</strong></p>
+                    <p><strong>Option IR (Informatique et Réseaux)</strong></p>
+                    <span class="tech">Projets en groupe • CIEL • BTS</span>
+                </article>
+
+                <article class="card">
+                    <h3>Baccalauréat STI2D (Sciences et Technologies de l'Ingénierie et du Développement Durable)</h3>
+                    <p><strong>2023 - 2024</strong></p>
+                    <p><strong>Obtenu avec mention</strong></p>
+                    <p>Spécialité EE (Énergie et Environnement).</p>
+                    <span class="tech">Développement durable • Bac • STI2D</span>
+                </article>
+            </section>
+
+            <section id="centreInterets" class="centreInterets">
+                <h2>Centres d'intérêt</h2>
+
+                <article class="card">
+                    <h3>Informatique et Open Source</h3>
+                    <p>Expérimentation de distributions Linux, découverte et utilisation de projets open source.</p>
+                    <span class="tech">Open Source • Linux</span>
+                </article>
+            </section>
+        </div>
+
+        <section id="contact" class="form">
+            <h2>Me Contacter</h2>
+            <form action="mailto:nathh.others.box01@gmail.com" method="post" enctype="text/plain">
+                <label for="email">Votre adresse email :</label><br>
+                <input type="email" name="email" id="email" placeholder="nom@exemple.com" required><br>
+
+                <label for="tel">Votre numéro de téléphone :</label><br>
+                <input type="tel" name="tel" id="tel" placeholder="06/+33 6 XX XX XX XX"><br>
+
+                <label for="question">Votre message / question* :</label><br>
+                <textarea name="question" id="question" required placeholder="Écrivez votre message ici..."></textarea><br>
+
+                <input type="submit" value="Envoyer un mail" class="bouton-envoi">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Nathan H — 2026</p>
+        <a href="https://github.com/NathH06">Mon Github</a><br>
+        <a href="lato_copyrights.txt">Copyright de la font utilisée</a>
+    </footer>
+</body>
+</html>
